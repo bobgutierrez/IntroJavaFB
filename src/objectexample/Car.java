@@ -31,6 +31,12 @@ public class Car {
         fuelLevel -= miles / 20;
     }
 
+    public void addFuel(int fuel) {
+        int newFuel = fuel + fuelLevel;
+        if (newFuel > 100) newFuel = 100;
+        fuelLevel = newFuel;
+    }
+
     public String getModel() {
         return model;
     }
@@ -57,6 +63,10 @@ public class Car {
         if (c1.fuelLevel >= c2.fuelLevel) rv = c1;
         else rv = c2;
         return rv;
+    }
+
+    public String toString() {
+        return this.asText();
     }
 
     public String asText() {

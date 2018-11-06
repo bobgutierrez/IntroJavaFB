@@ -33,5 +33,7 @@ public class UseCars {
         System.out.println("Car c2 has more fuel than car c? " + c2.iHaveMoreFuelThan(c));
 
         System.out.println("Max design speed of cars is " + Car.MAX_DESIGN_SPEED);
+
+
     }
 }
