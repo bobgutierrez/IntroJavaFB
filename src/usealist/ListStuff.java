@@ -9,8 +9,8 @@ public class ListStuff {
 
         System.out.println("Count of items in list is " + names.size());
 
-        names.add("Fred");
         names.add("Jim");
+        names.add("Fred");
         names.add("Sheila");
         System.out.println(names);
         System.out.println("Count of items in list is " + names.size());
@@ -31,5 +31,12 @@ public class ListStuff {
         System.out.println("Fred found at position " + positionOfFred);
         names.add(positionOfFred, "Alice");
         System.out.println(names);
+
+        int positionOfJim = names.indexOf("Jim");
+        System.out.println("Postiion of Jim is " + positionOfJim);
+        names.add(positionOfJim, "Maverick");
+        System.out.println(names);
+
+
     }
 }
