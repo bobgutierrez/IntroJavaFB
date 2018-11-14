@@ -37,6 +37,13 @@ public class ListStuff {
         names.add(positionOfJim, "Maverick");
         System.out.println(names);
 
+        /// print items in list...
+        int position = 0;
 
+        while (position < names.size()) {
+            System.out.println(names.get(position));
+            position = position + 1;
+        }
+        System.out.println("-------------------------");
     }
 }
